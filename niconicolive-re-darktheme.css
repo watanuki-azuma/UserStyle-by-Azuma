@@ -1,0 +1,296 @@
+@-moz-document url-prefix("https://live2.nicovideo.jp/"), url-prefix("https://live.nicovideo.jp/recent"), url-prefix("https://live.nicovideo.jp/") {
+/* それ以外 */
+
+/* 広告 */
+.___billboard-ad___2f-2_,#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad{
+    display: none !important;
+}
+
+/* 背景 */
+.___toggle-button___37swU{
+    background-color: #ccc;
+}
+.___toggle-button___37swU:hover{
+    background-color: #bbb;
+}
+.___recent-program-status-axis-contents-area___jaVFN,.___program-status-axis-contents-area___2Zh77,.___focus-axis-contents-area___iobXj,.___online-viewing-banner___2fAaR{
+    background-color: #2f2f2f !important;
+}
+.___feature-program-section___2ZYME,.___pickup-contents-list-section___19tVl,.___page___T8fzh{
+    background-color: #404040 !important;
+}
+.___program-card___153V-{
+    background-color: #464646 !important;
+}
+.___page-top-anchor___1YKnh{
+    background-color: #252525;
+}
+.___contents-card___l30EK{
+    background-color: #737373;
+}
+.___page-selector___1tIWc{
+    background-color: #333;
+}
+.___page-selector___1tIWc[data-name="next"]::before {
+    border-color: transparent transparent transparent #cacaca;
+}
+.___page-selector___1tIWc[data-name="prev"]::before{
+    border-color: transparent #cacaca transparent transparent;
+}
+.___heading___1ZfRu{
+    background-color: #252525;
+}
+.___item-list___1miSk{
+    background-color: #313131;
+}
+.___item___2UlkV,.___subject___1xC_J{
+    background-color: #424242;
+}
+.___tag___3UslK,.___counter___g2o1l:not([aria-selected="true"]),.___expand-button___2TWkz{
+    background-color: #2b2b2b;
+}
+.___counter___g2o1l:not([aria-selected="true"]):hover,.___expand-button___2TWkz:hover{
+    background-color: #4f4f4f;
+}
+.___big-banner___1EkFF,.___tag-widget___3N4L8{
+    background-color: #252525;
+}
+  .___message___3QdNF, .___visit-anchor___3UmQE{
+    background-color: #424242;
+}
+/* 文字 */
+.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button{
+    color: #ddd !important;
+}
+.___status___1nZI5{
+    color: #fff !important /* タイムシフト文字 */
+}
+}
+
+@-moz-document url-prefix("https://site.live.nicovideo.jp/recent") {
+/* 生ゲームプレイ中 */
+.namagame-PlayerWantedProgram,.namagame-Introduction{
+    background: #2f2f2f;
+}
+.namagame-GamePlayProgram{
+    background-color: #4f4f4f;
+}
+
+/* 文字 */
+.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button{
+    color: #ddd !important;
+}
+}
+
+@-moz-document url-prefix("https://live.nicovideo.jp/timetable") {
+/* 広告 */
+.___billboard-ad___2f-2_,#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad,#footer_ads{
+    display: none !important;
+}
+/* 文字 */
+.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,li,.count{
+    color: #ddd !important;
+}
+
+
+body{
+    background-color: #404040;
+}
+#SideNavigation .timetablePage-SideNavigation_Link{
+    background-image: linear-gradient(to bottom,#515151,#646464)
+}
+.feedback_link a{
+    display: none;
+}
+
+/* 番組表 */
+.container table#timeline .item,.container table#timeline tr.ts_end td,.container table#timeline .item.ts_end td.item_image, .container table#timeline tr.ts_end td{
+    background: #4f4f4f;
+}
+.container table#timeline .item_text,.container table#timeline .item td.item_image,.container table#timeline .item_score{
+    background: #5c5c5c;
+}
+.timetablePage-TimeshiftButton{
+    background-color: #535353;
+}
+.container table#timeline .item_status .message.onair{
+    background-color: #bf4747
+}
+/* カレンダー */
+.ui-widget.ui-widget-content{
+    border: 1px solid #2f2f2f;
+}
+.ui-datepicker,.ui-state-default{
+    background-color: #414141 !important;
+}
+.ui-datepicker-week-end:nth-last-child(2) a.ui-state-default{
+    background-color: #d4f0ff !important;
+    color: #0282ff !important;
+}
+.ui-datepicker-week-end:last-child a.ui-state-default{
+    background-color: #ffecec !important;
+    color: #f33 !important;
+}
+#calendar .ui-widget-content .ui-state-active{
+    background-color: #00a649 !important;
+    color: #eee !important;
+}
+}
+
+@-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
+/* 視聴ページ */
+
+/*背景*/
+.___watch-page___th_ha, .___broadcast-participation-area___2_M2S, .___footer-area___294Um{
+    background-color: #2b2b2b !important
+}
+.___page-top-anchor___9sr8C{
+    background-color: #2b2b2b;
+    border: solid 5px #000
+}
+.___program-information-area___3Y_YG, .___program-information-header-area___1iPxh, .___program-summary___2BVKN{
+    background-color: #252525
+}
+.___item-image___2Py-3{
+    background-color: #ccc
+}
+.___follow-status___24r9l, .___follow-anchor___1PaWU, .___contents-tree-anchor___CPjDe, .___tag___1B5lq, .___follow-status___24r9l{
+    background-color: #5a5a5a !important
+}
+.___edit-mode-toggle-button___2IVDx{
+    background-color: #5a5a5a;
+    border: solid 2px #676767;
+}
+.___player-status___BQ7B7{
+    background-color: #252525;
+}
+.___tab-area___3ACye, .___tab___1OVyJ{
+    background-color: #171717;
+    color: #ccc
+}
+.___ng-setting-controller___2aA2S{
+    margin-right: -1px;
+}
+.___ng-setting-popup-button___yBxaP>svg{
+    fill: #CCC
+}
+.___command-text-box___ohSTo, .___comment-text-box___3aBCq{
+    background-color: #333;
+    border: solid 2px #5a5a5a;
+}
+/*コメント入力欄の説明してる文字色*/
+input::placeholder{
+    color: #ccc !important
+}
+/*コメントまわりのボタン類*/
+.___submit-button___gas13, .___emotion-button___1Rolf, .___button___Re8M9{
+    background-color: #696969;
+}
+/*ヘッダーのメニューあたり*/
+li a:hover{
+    background-color: #464646 !important;
+}
+.___program-card___HpqGQ.___program-card___x3vdg:hover, .___table-cell___3E0rV.___cell___3bYIQ:hover{
+    background-color: #393939 !important;
+}
+
+/*スクロールバー*/
+.___body___1zOW_,.common-header-15gxh1a{
+    scrollbar-width:thin;
+}
+
+/*ソーシャルボタンまわり*/
+
+/*共有ボタン*/
+.___popup-toggle-button___1UajY{
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80"><path fill="%23CCCCCC" d="M51.054 18.714a10.641 10.641 0 113.911 6.962L26.948 41.329a10.552 10.552 0 01.08 1.33v.328L54.2 54.978a10.643 10.643 0 11-3.228 7.636v-.328L23.8 50.3a10.642 10.642 0 11-.754-15.964z" /></svg>');
+}
+/*その他の操作ボタン*/
+.___popup-toggle-button___31Okx{
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80"><path fill="%23CCCCCC" d="M46.348 40A6.348 6.348 0 1140 33.652 6.348 6.348 0 0146.348 40zm16.323-6.348A6.348 6.348 0 1069.019 40a6.348 6.348 0 00-6.348-6.348zm-45.342 0A6.348 6.348 0 1023.677 40a6.348 6.348 0 00-6.348-6.348z" /></svg>');
+}
+
+/* 文字設定 */
+h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc{
+    font-weight:800;
+    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+    text-decoration: none;
+    color: #ccc !important; 
+    border: inset 0px #222742 !important;
+}
+.___table-row___27ghe[data-comment-type=operator] .___comment-text___2cPL0{
+    color: #23ca6f !important;
+}
+.___body___2BWU6{
+    color: #eee !important;
+}
+
+/*ヘッダーまわり*/
+.common-header-15gxh1a, .common-header-1cuw74j, .common-header-5onxr7, .common-header-zz80x3, .common-header-1gq7o6w{
+    background-color: #666 !important
+} 
+.common-header-xp52wl:hover,.common-header-1cuw74j:hover, .common-header-5onxr7:hover, .common-header-zz80x3:hover, .common-header-1gq7o6w:hover{
+    background-color: #2b2b2b !important
+}
+
+.common-header-r1rgum, .common-header-vhrjlg{
+    display: none
+}
+
+.nico-CommonHeaderRoot .common-header-cvcm83 > *{
+    border-top: 1px solid rgb(85, 85, 85) !important
+}
+.nico-CommonHeaderRoot .common-header-zz80x3{
+    border-bottom: 1px solid rgb(85, 85, 85) !important
+}
+.nico-CommonHeaderRoot .common-header-1kfkrjf{
+    margin: 0px 0px 0px
+}
+
+
+/*削除する要素*/
+.___premium-merit-appeal-banner___1KEdB, .___premium-merit-appeal-banner___1hc_y, .___app-download-banner___3tmZG, .___app-download-banner___SDCFP, .___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad{
+    display: none;
+}
+
+/*たぶんコメント入れるとこ*/
+.___item-placeholder___3JoMT{
+    border: solid 2px #ccc !important
+}
+/*生放送タイトル*/
+.___program-summary___2BVKN{
+    box-shadow: 2px 10px 10px 0 #282828
+}
+}
+
+@-moz-document url-prefix("https://nicoad.nicovideo.jp/") {
+/*ニコニ広告部分*/
+
+/* 文字設定 */
+html,body,div,h1,.h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
+  ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY{
+    font-weight:800;
+    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+    text-decoration: none;
+    color: #ccc !important; 
+    border: inset 0px #222742 !important;
+}
+
+.header-bar[data-v-0d10b35d]{
+    background-color: #3c3c3c !important
+}
+.tab-bar[data-v-0b4aebf6]{
+    background-color: #555;
+    margin-top: -1px;
+}
+.parent-container[data-v-4a7dbe18]{
+    background-color: #555
+}
+.item-button[data-v-1c138322]{
+    background-color: #555;
+    border: 2px solid #252525;
+}
+html{
+    background: #555
+}
+}
