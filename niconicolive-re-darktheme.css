@@ -393,4 +393,8 @@ html{
 /* SVG */
 .more > a > svg[data-v-4690f66a]{fill:#ccc}
 path[data-v-6b25ead6]{fill:#3e3e3e !important;}
+/* グラフのダークテーマ化 うまくいかないのでコメントアウト
+.c3-shape .c3-shape-0 .c3-bar .c3-bar-0{
+	stroke: rgb(67,112,176) !important;
+	fill: rgb(67,112,176) !important;} */
 }
