@@ -179,6 +179,14 @@ body{
     border: solid 2px #5a5a5a;
 }
 
+/* フォロー中の番組 */
+.___program-card___2_Exo{
+    background: #333;
+}
+
+/* 障害バナー */
+.___message-anchor___1ShGI{color: #ff0a0a !important;}
+.___date-time___1U91Q{color: #f33 !important;}
 
 /* フォローしてるチャンネルがどうたらこうたら */
 .___alert-dialog___ZUyHx{
