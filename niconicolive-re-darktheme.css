@@ -140,6 +140,12 @@ body{
 @-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
 /* 視聴ページ */
 
+/* header */
+.nico-CommonHeaderRoot .common-header-juy1p4:hover,.nico-CommonHeaderRoot .common-header-11j62e9:hover{background-color: rgb(58, 58, 58);}
+.nico-CommonHeaderRoot .common-header-juy1p4,.nico-CommonHeaderRoot .common-header-11j62e9{background-color: rgb(95, 95, 95);}
+.nico-CommonHeaderRoot .common-header-11j62e9{color: #ccc;}
+.nico-CommonHeaderRoot .common-header-juy1p4{border-bottom: 1px solid rgb(152, 152, 152);}
+.nico-CommonHeaderRoot .common-header-juy1p4:nth-child(2n){border-left: 1px solid rgb(152, 152, 152);}
 /*背景*/
 .___watch-page___th_ha, .___broadcast-participation-area___2_M2S, .___footer-area___294Um{
     background-color: #2b2b2b !important
@@ -217,6 +223,12 @@ body{
 .___footer-area___294Um{
     background-color: #252525 !important;
 }
+.___community-page-anchor___3BT8W{background-color: #525252;border: 1px solid rgb(50, 50, 50);}
+.___social-group-information___3Vwle{border: #6f6f6f;}
+.___header-area___FLBI2,.___program-summary___2BVKN{border-bottom: 1px solid #6f6f6f;}
+.___item___3IrXi{border-top: 1px solid #6f6f6f;}
+
+.___description___1jHOS a{color: #3f97d6 !important}
 
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{
