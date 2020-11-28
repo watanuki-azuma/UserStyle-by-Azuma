@@ -230,6 +230,9 @@ body{
 
 .___description___1jHOS a{color: #3f97d6 !important}
 
+/* フォローボタン */
+.___toggle-button___VC3MN[aria-pressed=true]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
+
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{
     color: #ccc !important
