@@ -35,33 +35,15 @@
   }
 
 /* 検索バー */
-  .CrossSearch_Re-rowSelector,.CrossSearch_Re-form
-  {
-    background-color: #515151;
-    border: 1px solid #646464;
-  }
+  .CrossSearch_Re-rowSelector,.CrossSearch_Re-form{background-color: #515151;border: 1px solid #646464;}
 
-  .CrossSearch_Re-rowService.active, .CrossSearch_Re-rowService:hover
-  {
-    background-color: #313131;
-    color: #ddd;
-  }
+  .CrossSearch_Re-rowService.active, .CrossSearch_Re-rowService:hover{background-color: #313131;color: #ddd;}
 
-  .CrossSearch_Re-rowService
-  {
-    color: #d7d7d7;
-  }
+  .CrossSearch_Re-rowService{color: #d7d7d7;}
 
-  .CrossSearch_Re-form
-  {
-    background: #515151;
-    box-shadow: inset 0 0 0 1px #646464;
-  }
+  .CrossSearch_Re-form{background: #515151;box-shadow: inset 0 0 0 1px #646464;}
 
-  .CrossSearch_Re-inputt,.CrossSearch_Re-input::placeholde
-  {
-    color: #fff;
-  }
+  .CrossSearch_Re-inputt,.CrossSearch_Re-input::placeholde{color: #fff;}
 
   .CrossSearch_Re-button
   {
