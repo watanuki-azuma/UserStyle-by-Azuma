@@ -1,13 +1,5 @@
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/")
 {
-/* 臨時設定 コメントクエスト */
-  .WakutkoolNoticeContainer
-  {
-    background: #3e3e3e;
-    border-bottom: 4px solid #797979;
-  /*消す場合 display:none */;
-  }
-  
   /* 文字設定 */
   html,body,div,h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
   ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu
