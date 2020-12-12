@@ -475,4 +475,7 @@ body,.title-column[data-v-0d10b35d]{color: #ddd;}
 a{color: rgb(110, 222, 114);}
 .___close-button___2olJ->svg>path{fill: #c5c5c5;}
 
+.emotion-premium-anchor[data-v-7e9c3e5a]{background-color: rgb(53, 53, 53);}
+.close-button[data-v-7e9c3e5a]::after, .close-button[data-v-7e9c3e5a]::before{background-color: #fff;}
+
 }
