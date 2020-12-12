@@ -352,7 +352,7 @@ body{color: #ddd;}
 html{background: #555;}
 
 /* たぶんギフトタブ */
-.header-bar[data-v-0d10b35d],.nicoad-conductor-carousel[data-v-7044b6a3]{background-color: #3c3c3c !important}
+.header-bar[data-v-0d10b35d],.nicoad-conductor-carousel[data-v-7044b6a3],.nage-user-profile[data-v-0c946432]{background-color: #3c3c3c !important}
 .header-bar[data-v-0d10b35d]{border-bottom: 1px solid rgb(62 62 62);}
 .tab-bar[data-v-0b4aebf6]{background-color: #555;margin-top: -1px;}
 .parent-container[data-v-4a7dbe18]{background-color: #555}
