@@ -304,6 +304,8 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 .nico-CommonHeaderRoot .common-header-2cl2ey,.nico-CommonHeaderRoot .common-header-uruoug{background-color: rgb(66, 66, 66);}
 .nico-CommonHeaderRoot .common-header-9l26sq{color: #ccc;}
 
+.common-header-sig2g>svg>path{fill:#eee !important}
+
 /* ギフトタブ周辺border色 */
 .___rich-view-status___3mt-b{border: 1px solid #2b2b2b;}
 
@@ -459,4 +461,18 @@ path[data-v-6b25ead6]{fill:#3e3e3e !important;}
 .c3-shape .c3-shape-0 .c3-bar .c3-bar-0{
 	stroke: rgb(67,112,176) !important;
 	fill: rgb(67,112,176) !important;} */
+}
+
+@-moz-document url-prefix("https://emotion.nicovideo.jp/play/") {
+/* エモーションタブ */
+.wrapper[data-v-fee511b8],.header-bar[data-v-0d10b35d],.conductor-bar[data-v-53e2fb32]{background-color: #4c4c4c;}
+.header-bar[data-v-0d10b35d]{border: 1px solid rgb(53, 53, 53);}
+body{background-color: rgb(84, 84, 84);}
+.emotion-history-list[data-v-49e4e5d0]{background-color:rgba(88, 88, 88, 0.95) ;}
+
+body,.title-column[data-v-0d10b35d]{color: #ddd;}
+
+a{color: rgb(110, 222, 114);}
+.___close-button___2olJ->svg>path{fill: #c5c5c5;}
+
 }
