@@ -326,6 +326,12 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 }
 }
 
+@-moz-document url-prefix("https://live.nicovideo.jp/history") {
+    /* 生放送視聴履歴 */
+    body{background: #353535;}
+    .container{background: #303030;}
+}
+
 @-moz-document url-prefix("https://nicoad.nicovideo.jp/") {
 /*ニコニ広告部分*/
 
