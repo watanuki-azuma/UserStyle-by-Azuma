@@ -1,138 +1,96 @@
 @-moz-document url-prefix("https://www.nicovideo.jp/watch/")
 {
   /* 文字設定 */
-  html,body,div,h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,
-  ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu
-  {
-    font-weight: 800;
-    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-    text-decoration: none;
-    color: #ccc !important;
-    border: inset 0px #222742 !important;
-  }
+html,body,div,h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,span,a,img,strong,em,ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu
+{
+  font-weight: 800;
+  text-decoration: none;
+  color: #ccc !important;
+  border: inset 0px #222742 !important;
+}
 
-  html, body, .ReactGridCellContent:hover
-  {
-    background: #1b1b1b !important;
-  }
+html, body, .ReactGridCellContent:hover{background: #1b1b1b !important;}
 /* 動画説明欄などを下に移動(HTML5版) */
-  .WatchAppContainer-main
-  {
-    display: flex!important;
-    flex-direction: column;
-  }
+.WatchAppContainer-main
+{
+  display: flex!important;
+  flex-direction: column;
+}
 
-  .HeaderContainer
-  {
-    background: transparent;
-  }
+.HeaderContainer{background: transparent;}
 
-  .HeaderContainer
-  {
-    order: 2!important;
-    padding-top: 0!important;
-  }
+.HeaderContainer
+{
+  order: 2!important;
+  padding-top: 0!important;
+}
 
-  .MainContainer
-  {
-    order: 1!important;
-    margin-top: 16px!important;
-  }
+.MainContainer
+{
+  order: 1!important;
+  margin-top: 16px!important;
+}
 
-  .HeaderContainer
-  {
-    display: flex!important;
-    flex-direction: column;
-  }
+.HeaderContainer
+{
+  display: flex!important;
+  flex-direction: column;
+}
 
-  .TagContainer
-  {
-    order: -1!important;
-  }
+.TagContainer{order: -1!important;}
 
-  .VideoDescriptionContainer
-  {
-    order: 5!important;
-  }
+.VideoDescriptionContainer{order: 5!important;}
   /* ヘッダー */
 
-  #siteHeader #siteHeaderInner ul li a span
-  {
-    padding: 0px 6px;
-    cursor: pointer;
-    color: #fff !important;
-    border: inset 0px #222742 !important;
-  }
+#siteHeader #siteHeaderInner ul li a span
+{
+  padding: 0px 6px;
+  cursor: pointer;
+  color: #fff !important;
+  border: inset 0px #222742 !important;
+}
 
-  #siteHeaderRightMenuContainer, #siteHeaderLeftMenuContainer,.nicolib-SuggestSearch-suggestions.suggestBox,.nicolib-SuggestSearch-suggestion-list.suggestBoxInner,
-  .TagList .TagItem, .MainContainer-commentPanel, .react-grid-Header, .react-grid-HeaderRow, .VideoMetaOverflowMenuContainer-menu, .DropDownMenu
-  {
-    background: #2f2f2f !important;
-  }
+#siteHeaderRightMenuContainer, #siteHeaderLeftMenuContainer,.nicolib-SuggestSearch-suggestions.suggestBox,.nicolib-SuggestSearch-suggestion-list.suggestBoxInner,.TagList .TagItem, .MainContainer-commentPanel, .react-grid-Header, .react-grid-HeaderRow, .VideoMetaOverflowMenuContainer-menu, .DropDownMenu
+{background: #2f2f2f !important;}
 
-  #siteHeader
-  {
-    border-bottom: solid 1px #444 !important;
-  }
+#siteHeader{border-bottom: solid 1px #444 !important;}
 
-  .VideoMenuContainer-button
-  {
-    fill: #D2691E !important;
-  }
+.VideoMenuContainer-button{fill: #D2691E !important;}
 
-  .title, .VideoTitle
-  {
-    color: #ddd !important;
-    text-shadow: #D2691E 1px 1px 2px;
-    text-decoration: none !important;
-  }
+.title, .VideoTitle
+{
+  color: #ddd !important;
+  text-shadow: #D2691E 1px 1px 2px;
+  text-decoration: none !important;
+}
 
-  .title:hover, .title a:hover, .relatedTagAllLink, .topicPath
-  {
-    color: #D2691E !important;
-  }
+.title:hover, .title a:hover, .relatedTagAllLink, .topicPath{color: #D2691E !important;}
 
-  .searchText, .searchInput, .lastResBody,.videoExplorerBody .searchBox,.searchTypeList, .comment-panel .comment-tooltip, .SearchBox-input,
-  .CommentPostContainer-commandInput .CommentCommandInput, .CommentPostContainer-commentInput .CommentInput, .CommentInput-textarea,
-  .CommentCommandPaletteContainer.is-editing, .VideoMenuContainer-areaLeft, .VideoMenuContainer-areaRight,.TagSuggestionInput-input
-  {
-    background: #333 !important;
-    color: #ddd !important;
-    border: inset 0px #222742 !important;
-    box-shadow: 0px 0px 0px #fff inset;
-  }
+.searchText, .searchInput, .lastResBody,.videoExplorerBody .searchBox,.searchTypeList, .comment-panel .comment-tooltip, .SearchBox-input,.CommentPostContainer-commandInput .CommentCommandInput, .CommentPostContainer-commentInput .CommentInput, .CommentInput-textarea,.CommentCommandPaletteContainer.is-editing, .VideoMenuContainer-areaLeft, .VideoMenuContainer-areaRight,.TagSuggestionInput-input
+{
+  background: #333 !important;
+  color: #ddd !important;
+  border: inset 0px #222742 !important;
+  box-shadow: 0px 0px 0px #fff inset;
+}
 
-  /* 灰色枠線 */
-  #videoTagContainer .tagInner #videoHeaderTagList .toggleTagEdit,#videoHeaderTagList .videoHeaderTag,.videoExplorerBody .searchBox,
-  .videoExplorerBody .relatedTagList .relatedTagItem .relatedTagLink, .TagList .TagItem, .SearchBox-input, button, .VideoUploadDateMeta,
-  .VideoViewCountMeta, .CommentCountMeta, .MylistCountMeta
-  {
-    border: solid 1px #444 !important;
-    box-shadow: 0 0 0 0 #e0e0e0;
-  }
+/* 灰色枠線 */
+#videoTagContainer .tagInner #videoHeaderTagList .toggleTagEdit,#videoHeaderTagList .videoHeaderTag,.videoExplorerBody .searchBox,.videoExplorerBody .relatedTagList .relatedTagItem .relatedTagLink, .TagList .TagItem, .SearchBox-input, button, .VideoUploadDateMeta,.VideoViewCountMeta, .CommentCountMeta, .MylistCountMeta
+{
+  border: solid 1px #444 !important;
+  box-shadow: 0 0 0 0 #e0e0e0;
+}
 
   
 
 /* ここから更新箇所 */
 
 /* コメントエリアまわりの調整 */
-  .PlayerPanelContainer,
-.DataGrid-Header,
-.CommentPanelDataGrid .CommentPanelDataGrid-HeaderCell
-  {
-    background: #1b1b1b;
-  }
+.PlayerPanelContainer,.DataGrid-Header,.CommentPanelDataGrid .CommentPanelDataGrid-HeaderCell{background: #1b1b1b;}
 
-  .CommentPanelMenuContainer
-  {
-    background: #333;
-  }
+.CommentPanelMenuContainer{background: #333;}
 
-  .VideoMenuContainer
-  {
-    height: 45px;
-  }
-
+.VideoMenuContainer{height: 45px;}
 
 /* NG登録タブ */
 .ViewerNGRegister{background: #373737;}
@@ -140,303 +98,142 @@
 .ViewerNGRegister-cancelButton,.ViewerNGRegister-submitButton:disabled,.ViewerNGRegister-submitButton,.NGSettingPanelContainer-openViewerNGRegisterButton,.NGSettingPanelContainer-removeButton{color: #dbdbdb;background: #6a6a6a;}
 
 /* スクロールバーを細く(Firefoxのみ) */
-  .DataGrid-Body.CommentPanelDataGrid-Body,.PlayerOptionMenu,.DataGrid-Body
-  {
-    scrollbar-color: #1b1b1b #7a7a7a;
-    scrollbar-width: thin;
-    background: #333;
-  }
+.DataGrid-Body.CommentPanelDataGrid-Body,.PlayerOptionMenu,.DataGrid-Body
+{
+  scrollbar-color: #1b1b1b #7a7a7a;
+  scrollbar-width: thin;
+  background: #333;
+}
 
-  .WatchRecommendation-inner
-  {
-    scrollbar-color: #1b1b1b #7a7a7a;
-    scrollbar-width: thin;
-  }
+.WatchRecommendation-inner
+{
+  scrollbar-color: #1b1b1b #7a7a7a;
+  scrollbar-width: thin;
+}
 
 /*動画再生前のコメント入力欄のオーバーレイ削除*/
-  .CommentShutter.ControllerBoxCommentAreaContainer-commentShutter
-  {
-    display: none !important;
-  }
+.CommentShutter.ControllerBoxCommentAreaContainer-commentShutter{display: none !important;}
 
 /* コメント欄サイズの調整とコメント欄背景色設定 */
-  .CommentPostContainer-commentInput .CommentInput,
-.CommentCommandInput,
-.CommentPostContainer-commandInput .CommentCommandInput
-  {
-    height: 32px;
-  }
+.CommentPostContainer-commentInput .CommentInput,.CommentCommandInput,.CommentPostContainer-commandInput .CommentCommandInput{height: 32px;}
 
-  .ControllerBoxCommentAreaContainer
-  {
-    background: #1b1b1b;
-  }
+.ControllerBoxCommentAreaContainer{background: #1b1b1b;}
 
 /* コメント入力欄の枠線調整 */
-  .CommentPostContainer-commandInput,
+.CommentPostContainer-commandInput,.CommentPostContainer-commentInput{background-color: transparent;}
+
 .CommentPostContainer-commentInput
-  {
-    background-color: transparent;
-  }
+{
+  border-bottom: medium solid #5a5a5a !important;
+  border-top: medium solid #5a5a5a !important;
+}
+.CommentPostContainer-commandInput{border: medium solid #5a5a5a !important;}
 
-  .CommentPostContainer-commentInput
-  {
-    border-bottom: medium solid #5a5a5a !important;
-    border-top: medium solid #5a5a5a !important;
-  }
+.ControllerBoxCommentAreaContainer{border-right: none;}
 
-  .CommentPostContainer-commandInput
-  {
-    border: medium solid #5a5a5a !important;
-  }
-
-  .ControllerBoxCommentAreaContainer
-  {
-    border-right: none;
-  }
-
-  .LikeContainer
-  {
-    margin-top: 3px;
-  }
+.LikeContainer{margin-top: 3px;}
 
 /* コメント送信ボタンの調整 */
-  .CommentPostButton.ActionButton
-  {
-    height: 38px;
-  }
+.CommentPostButton.ActionButton{height: 38px;}
+.CommentPostButton.ActionButton{background-color: #717171 !important;}
 
-  .CommentPostButton.ActionButton
-  {
-    background-color: #717171 !important;
-  }
 /* NG登録欄まわり */
-  .NGSettingPanelContainer-content, .ViewerNGList .ViewerNGListDataGrid-HeaderCell
-  {
-    background-color: #1e1e1e;
-  }
+.NGSettingPanelContainer-content, .ViewerNGList .ViewerNGListDataGrid-HeaderCell{background-color: #1e1e1e;}
 
-  .ViewerNGList .ViewerNGListDataGrid-Body
-  {
-    background-color: #3e3e3e;
-  }
+.ViewerNGList .ViewerNGListDataGrid-Body{background-color: #3e3e3e;}
 
-  .NGSettingPanelContainer-header
-  {
-    background-color: #1a1a1a;
-  }
+.NGSettingPanelContainer-header{background-color: #1a1a1a;}
 
 /* 共有ボタンまわり*/
-  .SharePanelContainer-header
-  {
-    background-color: #1a1a1a;
-  }
+.SharePanelContainer-header{background-color: #1a1a1a;}
 
-  .SharePanelContainer
-  {
-    background-color: #3e3e3e;
-  }
+.SharePanelContainer{background-color: #3e3e3e;}
 
-  .SharePanelContainer::before
-  {
-    border-bottom: 10px solid #f4f4f4;
-  }
+.SharePanelContainer::before{border-bottom: 10px solid #f4f4f4;}
 
 /* Twitter共有時の調整 */
-  .TwitterAccountPanel, .TwitterPanelContainer
-  {
-    background-color: #252525;
-  }
+.TwitterAccountPanel, .TwitterPanelContainer{background-color: #252525;}
 
-  .TwitterPanelContainer-header
-  {
-    color: #fff !important;
-  }
+.TwitterPanelContainer-header{color: #fff !important;}
 
-  button.ActionButton.TwitterScreenshot-deleteButton, button.ActionButton.TwitterVideoClip-deleteButton
-  {
-    background: none !important;
-    border: none !important;
-    color: #98bbff;
-  }
+button.ActionButton.TwitterScreenshot-deleteButton, button.ActionButton.TwitterVideoClip-deleteButton
+{
+  background: none !important;
+  border: none !important;
+  color: #98bbff;
+}
 
-  button.ActionButton.TwitterAccountPanel-button
-  {
-    border: none !important;
-    background: none !important;
-  }
+button.ActionButton.TwitterAccountPanel-button
+{
+  border: none !important;
+  background: none !important;
+}
 
-  .TwitterScreenshot-inner, .TwitterVideoClip-inner
-  {
-    background-color: #535353;
-  }
+.TwitterScreenshot-inner, .TwitterVideoClip-inner{background-color: #535353;}
 
 /* ヘッダーホバー時のタブメニューまわり */
 /* ユーザー */
-  .common-header-5onxr7,
-.common-header-1cuw74j,
-.common-header-1kfkrjf,
-.common-header-zz80x3,
-.common-header-1gq7o6w,
-.common-header-icn1vf,
-.common-header-cvcm83,
-.common-header-15gxh1a
-  {
-    background-color: #666 !important;
-  }
+.common-header-5onxr7,.common-header-1cuw74j,.common-header-1kfkrjf,.common-header-zz80x3,.common-header-1gq7o6w,.common-header-icn1vf,.common-header-cvcm83,.common-header-15gxh1a{background-color: #666 !important;}
 
-  .common-header-5onxr7:hover,
-.common-header-1kfkrjf:hover,
-.common-header-zz80x3:hover,
-.common-header-1gq7o6w:hover,
-.common-header-icn1vf:hover,
-.common-header-xp52wl:hover
-  {
-    background-color: #2b2b2b !important;
-  }
+.common-header-5onxr7:hover,.common-header-1kfkrjf:hover,.common-header-zz80x3:hover,.common-header-1gq7o6w:hover,.common-header-icn1vf:hover,.common-header-xp52wl:hover{background-color: #2b2b2b !important;}
 
-  .common-header-g80xl3
-  {
-    background-color: rgb(89, 89, 89) !important;
-  }
+.common-header-g80xl3{background-color: rgb(89, 89, 89) !important;}
 
-  .common-header-1sypczf
-  {
-    color: rgb(225, 225, 225) !important;
-  }
+.common-header-1sypczf{color: rgb(225, 225, 225) !important;}
 
-  .nico-CommonHeaderRoot .common-header-r1rgum
-  {
-    display: none;
-  }
+.nico-CommonHeaderRoot .common-header-r1rgum{display: none;}
 
 /* お知らせ */
-  .common-header-1111win
-  {
-    border-bottom: 1px solid rgb(160 160 160) !important;
-  }
+.common-header-1111win{border-bottom: 1px solid rgb(160 160 160) !important;}
 
-  .common-header-105n2rz,
-.common-header-kolmxm
-  {
-    background-color: #666 !important;
-  }
+.common-header-105n2rz,.common-header-kolmxm{background-color: #666 !important;}
 
-  .common-header-abyv5k
-  {
-    color: #fff !important;
-  }
+.common-header-abyv5k{color: #fff !important;}
 
-  .common-header-2cl2ey
-  {
-    background-color: rgb(74 74 74) !important;
-  }
+.common-header-2cl2ey{background-color: rgb(74 74 74) !important;}
 
-  .common-header-vv8zyj,
-.common-header-ey0i79
-  {
-    color: rgb(230 230 230) !important;
-  }
-
-  .common-header-1eex7vk
-  {
-    color: rgb(204 230 255) !important;
-  }
+.common-header-vv8zyj,.common-header-ey0i79{color: rgb(230 230 230) !important;}
+.common-header-1eex7vk{color: rgb(204 230 255) !important;}
   
 /*マイリスト登録パネル*/
-  .AddingMylistPanel
-  {
-    background-color: #252525;
-  }
+.AddingMylistPanel{background-color: #252525;}
 
 /* その他メニュー */
-  .common-header-juy1p4,
-.common-header-11j62e9
-  {
-    background-color: #666 !important;
-  }
-
-  .common-header-juy1p4:hover,
-.common-header-11j62e9:hover
-  {
-    background-color: #2b2b2b !important;
-  }
+.common-header-juy1p4,.common-header-11j62e9{background-color: #666 !important;}
+.common-header-juy1p4:hover,.common-header-11j62e9:hover{background-color: #2b2b2b !important;}
 
 /* 動画説明欄のリンク色変更 */
-  .VideoDescription-html a
-  {
-    color: #D2691E !important;
-    text-decoration: underline;
-  }
-
-  .VideoDescription-html a:hover
-  {
-    color: #dd2200 !important;
-    text-decoration: underline;
-  }
+.VideoDescription-html a
+{
+  color: #D2691E !important;
+  text-decoration: underline;
+}
+.VideoDescription-html a:hover{color: #dd2200 !important;text-decoration: underline;}
 
 /* コメントの履歴選ぶとこ */
-  .CommentPanelMenuContainer-pastCommentMenu
-  {
-    background: #333;
-  }
+.CommentPanelMenuContainer-pastCommentMenu{background: #333;}
 
 /* 動作機能付きボタン */
-  .CommentCommandPaletteContainer
-  {
-    background-color: hsla(0, 0%, 20%, 0.9) !important;
-  }
+.CommentCommandPaletteContainer{background-color: hsla(0, 0%, 20%, 0.9) !important;}
 
-  .CommentCommandPaletteNode svg
-  {
-    fill: #d7d7d7;
-  }
+.CommentCommandPaletteNode svg{fill: #d7d7d7;}
 
-  .TagContainer-editButton, .ActionButton.CommentCommandPaletteNode[data-type="size"], .CommentCommandPaletteNode[data-type="layout"]
-  {
-    background-color: #252525 !important;
-  }
+.TagContainer-editButton, .ActionButton.CommentCommandPaletteNode[data-type="size"], .CommentCommandPaletteNode[data-type="layout"]{background-color: #252525 !important;}
+.LikeButton{background-color: #666;}
+.LikeButton:hover{background-color: #404040;}
 
-  .LikeButton
-  {
-    background-color: #666;
-  }
+.SharePanelVisibleButton{background-color: #000;}
 
-  .LikeButton:hover
-  {
-    background-color: #404040;
-  }
+.ActionButton.VideoMenuContainer-button,.ActionButton.CalendarButton,.ActionButton.ReloadButton,.ActionButton.CommentPanelAutoScrollButton,.ActionButton.ArrowPrevButton,.ActionButton.ArrowNextButton,.ControllerButton{background-color: #252525;}
 
-  .SharePanelVisibleButton
-  {
-    background-color: #000;
-  }
+.ClickInterceptor.LoginRequirer{background-color: transparent;}
 
-  .ActionButton.VideoMenuContainer-button,.ActionButton.CalendarButton,.ActionButton.ReloadButton,.ActionButton.CommentPanelAutoScrollButton,.ActionButton.ArrowPrevButton,.ActionButton.ArrowNextButton,.ControllerButton
-  {
-    background-color: #252525;
-  }
-
-  .ClickInterceptor.LoginRequirer
-  {
-    background-color: transparent;
-  }
-
-  .ActionButton.VideoStartButton.VideoStartButtonContainer
-  {
-    border: none !important;
-  }
+.ActionButton.VideoStartButton.VideoStartButtonContainer{border: none !important;}
 
 /* タグ編集欄 */
-  .TagContainer.is-editing
-  {
-    background-color: #484848;
-  }
+.TagContainer.is-editing{background-color: #484848;}
 
-  .TagSuggestionInput-input, .TagItem.is-editing, .TagList
-  {
-    box-shadow: none !important;
-  }
+.TagSuggestionInput-input, .TagItem.is-editing, .TagList{box-shadow: none !important;}
 
 /* 動画説明欄を開くときのボタン */
   .VideoDescriptionExpander-switch.VideoDescriptionExpander-switchExpand
@@ -445,39 +242,21 @@
     background: linear-gradient(90deg,hsla(0,0%,95.7%,0),#484848 16%);
   }
 
-  .VideoDescriptionExpander .VideoDescriptionExpander-switchExpand::before
-  {
-    border-color: #c4d2d9 transparent transparent !important;
-  }
+.VideoDescriptionExpander .VideoDescriptionExpander-switchExpand::before{border-color: #c4d2d9 transparent transparent !important;}
 
 /* コメント欄ホバー時 */
-  .DataGrid-TableRow.CommentPanelDataGrid-TableRow:hover
-  {
-    background-color: #282828 !important;
-  }
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow:hover{background-color: #282828 !important;}
 
 /* 検索時のお気に入りタグ表示部分 */
-  .TagSuggestionInput.is-focus .TagSuggestionList, .SearchBox-optionMenu, .ActionButton.SearchBox-optionButton
-  {
-    background-color: #353535;
-  }
+.TagSuggestionInput.is-focus .TagSuggestionList, .SearchBox-optionMenu, .ActionButton.SearchBox-optionButton{background-color: #353535;}
 
-  .TagSuggestionList-item:hover
-  {
-    background-color: #6c6c6c;
-  }
+.TagSuggestionList-item:hover{background-color: #6c6c6c;}
 
 /* 生放送 */
-  .OwnerNicoliveBanner
-  {
-    background-color: #333;
-  }  
+.OwnerNicoliveBanner{background-color: #333;}  
 
 /* 試験的 コントローラーボタンの色変化の時間修正 */
-  .ControllerButton:hover svg
-  {
-    transition: all .3s ease .1s !important;
-  }  
+.ControllerButton:hover svg{transition: all .3s ease .1s !important;}  
   
 /*カスタマイズ欄*/
   
@@ -498,29 +277,15 @@
 /*[[広告]]*/
 
 /* ニコるのカラー変更 */
-  .DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="0"]
-  {
-    background: #333;
-  }
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="0"]{background: #333;}
 
-  .DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="1"]
-  {
-    background: /*[[ニコるランク1]]*/}
-.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="2"] {
-  background:  /*[[ニコるランク2]]*/;
-  }
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="1"]{background: /*[[ニコるランク1]]*/}
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="2"] {background:  /*[[ニコるランク2]]*/;}
 
-  .DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="3"]
-  {
-    background: /*[[ニコるランク3]]*/}
-.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="4"] {
-   background:  /*[[ニコるランク4]]*/;
-  }
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="3"]{background: /*[[ニコるランク3]]*/}
+.DataGrid-TableRow.CommentPanelDataGrid-TableRow[data-row-nicoru-rank="4"] {background:  /*[[ニコるランク4]]*/;}
 
 /* 動画コントロールボタンカラー */
-  .ControllerButton:hover svg
-  {
-    fill: /*[[動画コントロールボタンホバー時の色]]*/}
-.SeekBar-played,.VolumeBar-progress{background-color: /*[[動画ボリュームバーとシークバーの色]]*/;
-  }
+.ControllerButton:hover svg{fill: /*[[動画コントロールボタンホバー時の色]]*/}
+.SeekBar-played,.VolumeBar-progress{background-color: /*[[動画ボリュームバーとシークバーの色]]*/;}
 }
