@@ -424,7 +424,25 @@ p > [data-v-3351af76]{color: #ddd !important;}
 	background: radial-gradient(farthest-corner at center bottom,hsla(0, 0%, 44.3%, 0.6),hsla(0, 0%, 23.5%, 0.51)) no-repeat 50% 100%/20% 0;
 }
 
+/* 広告設定時ポップアップ */
+.publish-contributor-info[data-v-56d8a92e],.publish-entrance[data-v-7714524f]{background-color: #252525;}
+.tab-target[data-v-56d8a92e]{background-color: #404040;box-shadow: 0 0 8px #696969;}
+.user-info[data-v-621cbd12]:not(:disabled){color: #62ab44;}
+.publish-frame-grade-visualizer[data-v-8b2307a8]{background-image: radial-gradient(ellipse at center top,#c3c3c3,#383838);}
+.info dt>small[data-v-72ae8949],.info dt>strong[data-v-72ae8949],.info dd[data-v-72ae8949]{color: #2f2f2f;}
 
+.modal-wrapper[data-v-3aa22a35]{background-color:hsl(0deg 0% 30% / 80%)}
+
+@media (max-width: 1023px) {
+    .modal-wrapper[data-v-3aa22a35]{background-color:#383838}
+    .modal-header[data-has-title][data-v-3aa22a35]{background-color: hsl(0deg 0% 16%);}
+}
+
+.name[data-v-3ed7e338],.empty[data-v-3ed7e338]{color: #ddd;}
+.choice[data-warn][data-v-3ed7e338]{color: #ff8508 !important;} /* 期限切れ近いチケット */
+@media (hover:hover) {
+    .choice[aria-selected=false][data-v-3ed7e338]:hover{background-color: #696969;}
+}
 
 
 .help-button[data-color-scheme="portal"] circle[data-v-6b25ead6]{fill:#979797;}
