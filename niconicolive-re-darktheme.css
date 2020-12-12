@@ -106,6 +106,8 @@ body{background-color: #404040;}
     border: solid 2px #5a5a5a;
 }
 
+.___site-header___3BZ6_ [class*=___search-form___]:hover [class*=___search-button___], .___site-header___3BZ6_ [class*=___search-form___]:hover [class*=___text-box___]{background-color: #888;}
+
 /* フォロー中の番組 */
 .___program-card___2_Exo{background: #333;}
 
