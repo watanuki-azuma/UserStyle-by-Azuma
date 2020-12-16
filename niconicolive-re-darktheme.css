@@ -89,11 +89,7 @@ body{background-color: #404040;}
 }
 .___program-information-area___3Y_YG, .___program-information-header-area___1iPxh, .___program-summary___2BVKN{background-color: #252525}
 .___item-image___2Py-3{background-color: #ccc}
-.___follow-status___24r9l, .___follow-anchor___1PaWU, .___contents-tree-anchor___CPjDe, .___tag___1B5lq, .___follow-status___24r9l{background-color: #5a5a5a !important}
-.___edit-mode-toggle-button___2IVDx{
-    background-color: #5a5a5a;
-    border: solid 2px #676767;
-}
+.___follow-status___24r9l, .___follow-anchor___1PaWU, .___contents-tree-anchor___CPjDe, .___follow-status___24r9l{background-color: #5a5a5a !important}
 .___player-status___BQ7B7{background-color: #252525;}
 .___tab-area___3ACye, .___tab___1OVyJ{
     background-color: #171717;
@@ -142,12 +138,20 @@ body{background-color: #404040;}
 /* フォローボタン */
 .___toggle-button___VC3MN[aria-pressed=true]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
 
+/* タグっぽいとこ */
+.___tag___1B5lq{border: 1px solid #565656;background-color: #2b2b2b !important;}
+.___edit-mode-toggle-button___2IVDx{
+    background-color: #333333;
+    border: solid 2px #676767;
+}
+.___edit-mode-toggle-button___2IVDx>svg>path{fill: #9a9a9a;}
+
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{color: #ccc !important}
 /*コメントまわりのボタン類*/
 .___submit-button___gas13, .___emotion-button___1Rolf, .___button___Re8M9{background-color: #696969;}
-/*ヘッダーのメニューあたり*/
-li a:hover{background-color: #464646 !important;}
+/* ヘッダーのメニューあたり */
+li a:hover{background-color: #464646 !important;border-radius: 12px;} /* タグにも適用されてる…… */
 .___program-card___HpqGQ.___program-card___x3vdg:hover, .___table-cell___3E0rV.___cell___3bYIQ:hover{background-color: #393939 !important;}
 
 /*スクロールバー*/
@@ -176,6 +180,9 @@ li a:hover{background-color: #464646 !important;}
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80"><path fill="%23CCCCCC" d="M46.348 40A6.348 6.348 0 1140 33.652 6.348 6.348 0 0146.348 40zm16.323-6.348A6.348 6.348 0 1069.019 40a6.348 6.348 0 00-6.348-6.348zm-45.342 0A6.348 6.348 0 1023.677 40a6.348 6.348 0 00-6.348-6.348z" /></svg>');
 }
 
+.___list___280fl,.___list___3Tgas{background-color: #383838;border: #585858;}
+.___popup-toggle-button___1UajY:hover,.___popup-toggle-button___31Okx:hover{background-color: #424242;}
+
 /* 文字設定 */
 h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,.___description___3aLzk{
     font-weight:800;
@@ -201,6 +208,10 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 .nico-CommonHeaderRoot .common-header-1swev0c:hover{background-color: #2b2b2b;}
 .nico-CommonHeaderRoot .common-header-2cl2ey,.nico-CommonHeaderRoot .common-header-uruoug{background-color: rgb(66, 66, 66);}
 .nico-CommonHeaderRoot .common-header-9l26sq{color: #ccc;}
+
+.nico-CommonHeaderRoot .common-header-vv8zyj{color: #ddd;}
+.nico-CommonHeaderRoot .common-header-1eex7vk{color: rgb(110, 222, 114);}
+.nico-CommonHeaderRoot .common-header-1ip78db:hover{background-color: rgb(60, 60, 60);}
 
 .common-header-sig2g>svg>path{fill:#eee !important}
 
