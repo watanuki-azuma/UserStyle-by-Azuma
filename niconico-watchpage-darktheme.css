@@ -98,7 +98,7 @@ html, body, .ReactGridCellContent:hover{background: #1b1b1b !important;}
 .ViewerNGRegister-cancelButton,.ViewerNGRegister-submitButton:disabled,.ViewerNGRegister-submitButton,.NGSettingPanelContainer-openViewerNGRegisterButton,.NGSettingPanelContainer-removeButton{color: #dbdbdb;background: #6a6a6a;}
 
 /* スクロールバーを細く(Firefoxのみ) */
-.DataGrid-Body.CommentPanelDataGrid-Body,.PlayerOptionMenu,.DataGrid-Body
+.DataGrid-Body.CommentPanelDataGrid-Body,.PlayerOptionMenu,.DataGrid-Body,.common-header-wgjwwi
 {
   scrollbar-color: #1b1b1b #7a7a7a;
   scrollbar-width: thin;
@@ -173,9 +173,9 @@ button.ActionButton.TwitterAccountPanel-button
 
 /* ヘッダーホバー時のタブメニューまわり */
 /* ユーザー */
-.common-header-5onxr7,.common-header-1cuw74j,.common-header-1kfkrjf,.common-header-zz80x3,.common-header-1gq7o6w,.common-header-icn1vf,.common-header-cvcm83,.common-header-15gxh1a{background-color: #666 !important;}
+.common-header-5onxr7,.common-header-1cuw74j,.common-header-1kfkrjf,.common-header-zz80x3,.common-header-1gq7o6w,.common-header-icn1vf,.common-header-cvcm83,.common-header-15gxh1a,.nico-CommonHeaderRoot .common-header-1swev0c{background-color: #666 !important;}
 
-.common-header-5onxr7:hover,.common-header-1kfkrjf:hover,.common-header-zz80x3:hover,.common-header-1gq7o6w:hover,.common-header-icn1vf:hover,.common-header-xp52wl:hover{background-color: #2b2b2b !important;}
+.common-header-5onxr7:hover,.common-header-1kfkrjf:hover,.common-header-zz80x3:hover,.common-header-1gq7o6w:hover,.common-header-icn1vf:hover,.common-header-xp52wl:hover,.nico-CommonHeaderRoot .common-header-1swev0c:hover{background-color: #2b2b2b !important;}
 
 .common-header-g80xl3{background-color: rgb(89, 89, 89) !important;}
 
@@ -187,6 +187,8 @@ button.ActionButton.TwitterAccountPanel-button
 .common-header-1111win{border-bottom: 1px solid rgb(160 160 160) !important;}
 
 .common-header-105n2rz,.common-header-kolmxm{background-color: #666 !important;}
+
+.nico-CommonHeaderRoot .common-header-uruoug{background-color: rgb(51, 51, 51);}
 
 .common-header-abyv5k{color: #fff !important;}
 
