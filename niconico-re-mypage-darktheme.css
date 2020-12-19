@@ -43,7 +43,7 @@
 
   .CrossSearch_Re-form{background: #515151;box-shadow: inset 0 0 0 1px #646464;}
 
-  .CrossSearch_Re-inputt,.CrossSearch_Re-input::placeholde{color: #fff;}
+  .CrossSearch_Re-inputt,.CrossSearch_Re-input::placeholder{color: #fff;}
 
   .CrossSearch_Re-button
   {
@@ -353,7 +353,9 @@
 
 /*[[広告]]*/
 
-/*[[MoreDarkTheme]]*/;
+/*[[MoreDarkTheme]]*/
+
+/*[[EnabelOrangeTheme]]*/
 
 @-moz-document url-prefix("https://www.nicovideo.jp/series/")
 {
@@ -445,6 +447,8 @@
 .SideContainer {  margin-right: auto; width: 184px;}
 .ExpandBoxButton{height: auto;}
 .UserPageHeader{margin-top: -20px;margin-bottom: -10px;}
+.SubMenuLink{width: 95%;}
+.SideContainer{width: 185px;}
 
 /* 広告 */
 
@@ -459,3 +463,22 @@
 .UserPageHeader,.UserPage-header, .UserPageHeader, .UserDetailsHeader, .OtherMypageLinks, .ThreePointMenu, .ShareModal-modal, .MainMenuContainer-menu{background-color:#171717 !important;}
 body,.NicorepoPage-content{background-color: #1e1e1e !important;}
 .NicorepoItem-item,.UserItem-content,.MylistMediaObject-linkArea{background-color:#282828 !important; border: 1px solid #333 !important;}
+
+/* Enable Orange like theme */
+
+/* 文字 */
+.UserDetailsHeader-levelLabelValue, .UserDetailsStatusItem-link, .CopyForm-copy, .SubMenuLink-link:hover .SubMenuLink-label, .SubMenuLink-link_active .SubMenuLink-label, .UserItem:hover .UserItem-nickname, .VideoMediaObject-linkArea:hover .VideoMediaObject-bodyTitle, .ModalContent-footerCancelButton, .MylistMediaObject:hover .MylistMediaObject-bodyTitle, .BadgeContainer-infoLink:hover, .ExpandBoxButton-overlay:hover + .ExpandBoxButton, .ExpandBoxButton:hover, .UserDescription .ExpandBox_is-expanded a{color: #dd9b00;}
+
+a:hover, .CommunityItem:hover .CommunityItem-name, .FollowingTagContainer-tagNameLink:hover, .ChannelItem:hover .ChannelItem-name{color: #f49112;}
+
+.MainMenuItem-active{color: #d9b04f;}
+
+.NicorepoItem-activityDescription[style="color: rgb(208, 2, 27);"]{color: #FBBC00 !important;}
+
+.MainMenuContainer-activeBorder{background-color: #d09200;}
+.RadioItem > input:checked + label::after{background: #f0b80e;}
+.MainMenuContainer-garageLink{background: linear-gradient(90deg,#9f6900,#b9a500);}
+.SubMenuLink-link_internal:hover{background-color: #3e342b;}
+.FollowButton:hover{background-color: #886700;}
+.FollowButton_following{background-color: #b08500;}
+.FollowButton{color: #ffe8bb;border: 1px solid #c88404;}
