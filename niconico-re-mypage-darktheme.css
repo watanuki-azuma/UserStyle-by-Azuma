@@ -426,29 +426,29 @@
 
 /* 詰めるやつと併用する */
 .LikeItemAfter-thanksMessage::after{
-	border-bottom-color: transparent;
-	left: -14px;
-	border-right-color: #777;
-	top: 8px;
+	border-bottom-color: transparent !important;
+	left: -14px !important;
+	border-right-color: #777 !important;
+	top: 8px !important;
 }
-.LikeItemAfter-thanksMessage::before{border-right-color:transparent;}
-.NicorepoPage-content{background-color:#3e3e3e;}
+.LikeItemAfter-thanksMessage::before{border-right-color:transparent !important;}
+.NicorepoPage-content{background-color:#3e3e3e !important;}
 
 /* 詰めるやつと併用する + 独自改修 */
 .LikeItemAfter-thanksMessage::after{
-	border-bottom-color: transparent;
-	left: -14px;
-	border-right-color: #777;
-	top: 8px;
+	border-bottom-color: transparent !important;
+	left: -14px !important;
+	border-right-color: #777 !important;
+	top: 8px !important;
 }
-.LikeItemAfter-thanksMessage::before{border-right-color:transparent;}
-.NicorepoPage-content{background-color:#3e3e3e;}
-.SubMenuButton{width:90%;}
-.SideContainer {  margin-right: auto; width: 184px;}
-.ExpandBoxButton{height: auto;}
-.UserPageHeader{margin-top: -20px;margin-bottom: -10px;}
-.SubMenuLink{width: 95%;}
-.SideContainer{width: 185px;}
+.LikeItemAfter-thanksMessage::before{border-right-color:transparent !important;}
+.NicorepoPage-content{background-color:#3e3e3e !important;}
+.SubMenuButton{width:90% !important;}
+.SideContainer {margin-right: auto !important; width: 185px !important;}
+.ExpandBoxButton{height: auto !important;}
+.UserPageHeader{margin-top: -20px !important;margin-bottom: -10px !important;}
+.SubMenuLink{width: 95% !important;}
+.UserDetailsContainer{height: 135px;}
 
 /* 広告 */
 
