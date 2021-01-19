@@ -8,10 +8,10 @@
 .___toggle-button___37swU{background-color: #ccc;}
 .___toggle-button___37swU:hover{background-color: #bbb;}
 .___recent-program-status-axis-contents-area___jaVFN,.___program-status-axis-contents-area___2Zh77,.___focus-axis-contents-area___iobXj,.___online-viewing-banner___2fAaR{background-color: #2f2f2f !important;}
-.___feature-program-section___2ZYME,.___pickup-contents-list-section___19tVl,.___page___T8fzh{background-color: #404040 !important;}
+.___feature-program-section___2ZYME,.___pickup-contents-list-section___19tVl,.___page___T8fzh,.___feature-program-section___2-hHM{background-color: #404040 !important;}
 .___program-card___153V-{background-color: #464646 !important;}
 .___page-top-anchor___1YKnh{background-color: #252525;}
-.___contents-card___l30EK{background-color: #737373;}
+.___contents-card___1V5Yc{background-color: #737373;}
 .___page-selector___1tIWc{background-color: #333;}
 .___page-selector___1tIWc[data-name="next"]::before {border-color: transparent transparent transparent #cacaca;}
 .___page-selector___1tIWc[data-name="prev"]::before{border-color: transparent #cacaca transparent transparent;}
@@ -20,8 +20,14 @@
 .___item___2UlkV,.___subject___1xC_J{background-color: #424242;}
 .___tag___3UslK,.___counter___g2o1l:not([aria-selected="true"]),.___expand-button___2TWkz{background-color: #2b2b2b;}
 .___counter___g2o1l:not([aria-selected="true"]):hover,.___expand-button___2TWkz:hover{background-color: #4f4f4f;}
-.___big-banner___1EkFF,.___tag-widget___3N4L8{background-color: #252525;}
 .___message___3QdNF, .___visit-anchor___3UmQE{background-color: #424242;}
+.___big-banner___3lg7I{background-color: transparent;}
+
+/* 謎 */
+.___content-area___3HJ4l{background: #252525;}
+.___tag-widget___3o0cE{background-color: #404040;}
+.___expander___BMnjT[aria-expanded="false"] .___expand-button___2TWkz::before{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#373737);}
+
 /* 文字 */
 .___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button{color: #ddd !important;}
 .___status___1nZI5{color: #fff !important /* タイムシフト文字 */}
@@ -82,14 +88,14 @@ body{background-color: #404040;}
 .nico-CommonHeaderRoot .common-header-juy1p4{border-bottom: 1px solid rgb(152, 152, 152);}
 .nico-CommonHeaderRoot .common-header-juy1p4:nth-child(2n){border-left: 1px solid rgb(152, 152, 152);}
 /*背景*/
-.___watch-page___th_ha, .___broadcast-participation-area___2_M2S, .___footer-area___294Um{background-color: #2b2b2b !important}
+.___watch-page___2883Z, .___broadcast-participation-area___2_M2S, .___footer-area___294Um{background-color: #2b2b2b !important}
 .___page-top-anchor___9sr8C{
     background-color: #2b2b2b;
     border: solid 5px #000
 }
-.___program-information-area___3Y_YG, .___program-information-header-area___1iPxh, .___program-summary___2BVKN{background-color: #252525}
+div[class*=___program-information-area],div[class*="___program-information-header-area"], div[class*="___program-summary___"]{background-color: #252525}
 .___item-image___2Py-3{background-color: #ccc}
-.___follow-status___24r9l, .___follow-anchor___1PaWU, .___contents-tree-anchor___CPjDe, .___follow-status___24r9l{background-color: #5a5a5a !important}
+.___follow-status___24r9l, .___follow-anchor___1PaWU, a[class*="___contents-tree-anchor___"], .___follow-status___24r9l{background-color: #5a5a5a !important}
 .___player-status___BQ7B7{background-color: #252525;}
 .___tab-area___3ACye, .___tab___1OVyJ{
     background-color: #171717;
@@ -115,36 +121,35 @@ body{background-color: #404040;}
 .___alert-dialog___ZUyHx{background-color: #4d4d4d;}
 .___label___1BdfS{color: #ddd;}
 .___close-button___JVdVr:enabled:hover{background-color: #464646;}
-.___toggle-button___1Y6i2[aria-pressed="false"],___follow-status___2lNEX{background-color: #404040;}
-.___toggle-button___1Y6i2[aria-pressed="true"]{
+button[class*="___toggle-button"][aria-pressed="false"],___follow-status___2lNEX{background-color: #404040;}
+button[class*="toggle-button"][aria-pressed="true"]{
     background-color: #757575;
     border: 2px solid #717171;
 }
 
 /* 説明欄の謎ボタン */
-.___description___3aLzk[aria-expanded="false"] .___expand-button___S8O-B{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#4f4f4f 16%);}
+[class*="___description___"][aria-expanded="false"] [class*="expand-button___"]{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#4f4f4f 16%);}
 .___channel-page-anchor___MM9Ik{
     background-color: #333;
     border: 1px solid #5a5a5a;
 }
-.___footer-area___294Um{background-color: #252525 !important;}
-.___community-page-anchor___3BT8W{background-color: #525252;border: 1px solid rgb(50, 50, 50);}
-.___social-group-information___3Vwle{border: #6f6f6f;}
-.___header-area___FLBI2,.___program-summary___2BVKN{border-bottom: 1px solid #6f6f6f;}
-.___item___3IrXi{border-top: 1px solid #6f6f6f;}
+[class*="___footer-area___"]{background-color: #252525 !important;}
+[class*="___community-page-anchor___"]{background-color: #525252;border: 1px solid rgb(50, 50, 50);}
+[class*="___social-group-information___"]{border: #6f6f6f;}
+[class*="___header-area___"],[class*="___program-summary___"]{border-bottom: 1px solid #6f6f6f;}
 
-.___description___1jHOS a{color: #3f97d6 !important}
+[class*="___description___"] a{color: #3f97d6 !important}
 
 /* フォローボタン */
-.___toggle-button___VC3MN[aria-pressed=true]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
+[class*="___toggle-button___"][aria-pressed=true],[class*="___toggle-button___"][aria-pressed="false"]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
 
 /* タグっぽいとこ */
 .___tag___1B5lq{border: 1px solid #565656;background-color: #2b2b2b !important;}
-.___edit-mode-toggle-button___2IVDx{
+[class*="___edit-mode-toggle-button___"]{
     background-color: #333333;
     border: solid 2px #676767;
 }
-.___edit-mode-toggle-button___2IVDx>svg>path{fill: #9a9a9a;}
+[class*="___edit-mode-toggle-button___"]>svg>path{fill: #9a9a9a;}
 
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{color: #ccc !important}
@@ -172,11 +177,11 @@ li a:hover{background-color: #464646 !important;border-radius: 12px;} /* タグ�
 /*ソーシャルボタンまわり*/
 
 /*共有ボタン*/
-.___popup-toggle-button___1UajY{
+.___popup-toggle-button___T53kv{
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80"><path fill="%23CCCCCC" d="M51.054 18.714a10.641 10.641 0 113.911 6.962L26.948 41.329a10.552 10.552 0 01.08 1.33v.328L54.2 54.978a10.643 10.643 0 11-3.228 7.636v-.328L23.8 50.3a10.642 10.642 0 11-.754-15.964z" /></svg>');
 }
 /*その他の操作ボタン*/
-.___popup-toggle-button___31Okx{
+.___popup-toggle-button___2lp2f{
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 80 80"><path fill="%23CCCCCC" d="M46.348 40A6.348 6.348 0 1140 33.652 6.348 6.348 0 0146.348 40zm16.323-6.348A6.348 6.348 0 1069.019 40a6.348 6.348 0 00-6.348-6.348zm-45.342 0A6.348 6.348 0 1023.677 40a6.348 6.348 0 00-6.348-6.348z" /></svg>');
 }
 
@@ -184,7 +189,7 @@ li a:hover{background-color: #464646 !important;border-radius: 12px;} /* タグ�
 .___popup-toggle-button___1UajY:hover,.___popup-toggle-button___31Okx:hover{background-color: #424242;}
 
 /* 文字設定 */
-h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,.___description___3aLzk{
+h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,div[class*="___description___"]{
     font-weight:800;
     text-decoration: none;
     color: #ccc !important; 
@@ -220,14 +225,14 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 
 
 /*削除する要素*/
-.___premium-merit-appeal-banner___1KEdB, .___premium-merit-appeal-banner___1hc_y, .___app-download-banner___3tmZG, .___app-download-banner___SDCFP, .___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad{display: none;}
+.___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad,a[class*="___premium-merit-appeal-banner"],a[class*="___app-download-banner"]{display: none;}
 
 /*たぶんコメント入れるとこ*/
 .___item-placeholder___3JoMT{border: solid 2px #ccc !important}
 .___value___3EufI{background: #575757;}
 
 /*生放送タイトル*/
-.___program-summary___2BVKN{box-shadow: 2px 10px 10px 0 #282828}
+div[class*="___program-summary___"]{box-shadow: 2px 10px 10px 0 #282828}
 }
 
 @-moz-document url-prefix("https://live.nicovideo.jp/history") {
