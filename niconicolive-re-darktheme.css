@@ -150,6 +150,7 @@ button[class*="toggle-button"][aria-pressed="true"]{
 
 /* フォローボタン */
 [class*="___toggle-button___"][aria-pressed=true],[class*="___toggle-button___"][aria-pressed="false"]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
+[class^="___follow-toggle-form___"][data-follow-status="follow"] [class^="___follow-status___"]{background-color: #535353;}
 
 /* タグっぽいとこ */
 .___tag___1B5lq{border: 1px solid #565656;background-color: #2b2b2b !important;}
