@@ -159,9 +159,13 @@ button[class*="toggle-button"][aria-pressed="true"]{
     border: solid 2px #676767;
 }
 [class*="___edit-mode-toggle-button___"]>svg>path{fill: #9a9a9a;}
+[class^="___program-information-main-area___"] > [class^="___tag-widget___"]::before{background-color:#515151 ;}
+[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"]{background-color:#515151;}
+[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > div > [class^="___text-box___"]{background-color:#515151;border:1px solid #9d9d9d}
+button[class^="___edit-mode-toggle-button"] > span,[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > [class^="___faq-anchor___"]::after,[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > [class^="___register-button___"]{color: #eee !important;}
 
 /*コメント入力欄の説明してる文字色*/
-input::placeholder{color: #ccc !important}
+input::placeholder{color: #fff !important}
 /*コメントまわりのボタン類*/
 .___submit-button___gas13, .___emotion-button___1Rolf, .___button___Re8M9{background-color: #696969;}
 /* ヘッダーのメニューあたり */
