@@ -280,6 +280,14 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 .___item-placeholder___3JoMT{border: solid 2px #ccc !important}
 .___value___3EufI{background: #575757;}
 
+/* command palette tab */
+[class^="___command-palette___"]{background-color:hsla(0, 0%, 31.8%, 0.90) ;}
+[class^="___command-palette___"] > [class^="___message___"]{color: #d2d2d2;}
+[class^="___caption___"] > label[class^="___label___"]{color: #d2d2d2;}
+[class^="___symbol-mark___"] > path{fill: #606060;}
+[class^="___anonymous-comment-post-toggle-button-field___"] > [class^="___target___"]::after{background-color: #ffbb1a;border: 1px solid #ffb830;}
+[class^="___anonymous-comment-post-toggle-button-field___"] > [class^="___target___"]::before{background-color: rgba(255, 142, 42, 0.5);}
+
 /*生放送タイトル*/
 div[class*="___program-summary___"]{box-shadow: 2px 10px 10px 0 #282828}
 
