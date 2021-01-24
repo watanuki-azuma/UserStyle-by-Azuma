@@ -4,7 +4,7 @@
 /* 広告 */
 .___billboard-ad___2f-2_,#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad{display: none !important;}
 
-/* 背景 */
+/* 背景とか */
 button[class*="___toggle-button___"]{background-color: #ccc;}
 button[class*="___toggle-button___"]:hover{background-color: #bbb;}
 [class*="___recent-program-status-axis-contents-area___"],div[class*="___program-status-axis-contents-area___"],div[class*="___focus-axis-contents-area___"],div[class*="___online-viewing-banner___"]{background-color: #2f2f2f !important;}
@@ -29,15 +29,20 @@ div[class*="___popup-control___"] > [class*="___menu-panel___"]{background-color
 [data-item-name="visitAnchor"] > [class*="___visit-anchor___"]{background-color:transparent}
 
 [class^="___menu-popup-control"] > [class*="___program-menu"]{background-color: #464646;}
+span[class^="___status___"][data-status-type="onair"]{background-color:#ff2a2a;color:#fff !important}
+span[class^="___status___"][data-timeshift-available="true"]{background-color: #2285e8;color: #fff !important;}
 
 /* 謎 */
 .___content-area___3HJ4l{background: #252525;}
 .___tag-widget___3o0cE{background-color: #404040;}
 .___expander___BMnjT[aria-expanded="false"] .___expand-button___2TWkz::before{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#373737);}
 
+
+[class^="___visit-anchor___"]::after{border-color: #e8e8e8;}
+
 /* 文字 */
 .___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,.___caption___2l1oP{color: #ddd !important;}
-.___status___1nZI5{color: #fff !important /* タイムシフト文字 */}
+[placeholder="番組を探す"]::placeholder{color: #1e1e1e !important;}
 
 /* SVG */
 [class^="___symbol-mark___"] > path{fill: #d5d5d5;}
