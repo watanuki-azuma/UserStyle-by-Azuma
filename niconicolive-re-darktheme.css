@@ -86,7 +86,7 @@ body{background-color: #404040;}
 }
 }
 
-@-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
+@-moz-document url-prefix("https://live2.nicovideo.jp/"), url-prefix("https://live.nicovideo.jp/recent"), url-prefix("https://live.nicovideo.jp/") {
 /* 視聴ページ */
 
 /* header */
@@ -200,6 +200,14 @@ li a:hover{background-color: #464646 !important;border-radius: 12px;} /* タグ�
 
 .___list___280fl,.___list___3Tgas{background-color: #383838;border: #585858;}
 .___popup-toggle-button___1UajY:hover,.___popup-toggle-button___31Okx:hover{background-color: #424242;}
+
+/* 動画上市場 */
+div[class^="___balloon___"]{background-color: hsla(0, 0%, 28.2%, 0.9);}
+button[value="ネタを通報"]{background-color: hsla(0, 0%, 28.2%, 0.9);}
+button[value="ネタを通報"]:hover{background-color: hsla(0, 0%, 62%, .9);}
+.ItemDialogContent_ActionBtn-purchase{background-color: #373737;border-color: #fbb458;color: #ffa229;}
+[class="ItemDialogContent_LayoutRow"] > .ItemDialogContent_ActionBtn-purchase:hover{background-color: #707070;}
+.ItemDialogContent_Title{color:#d5d5d5}
 
 /* 文字設定 */
 h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,div[class*="___description___"]{
