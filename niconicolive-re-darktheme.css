@@ -28,6 +28,8 @@ button[aria-controls="followed-program-notification-reader-target"]:hover{backgr
 div[class*="___popup-control___"] > [class*="___menu-panel___"]{background-color: #535353;}
 [data-item-name="visitAnchor"] > [class*="___visit-anchor___"]{background-color:transparent}
 
+[class^="___menu-popup-control"] > [class*="___program-menu"]{background-color: #464646;}
+
 /* 謎 */
 .___content-area___3HJ4l{background: #252525;}
 .___tag-widget___3o0cE{background-color: #404040;}
@@ -36,6 +38,11 @@ div[class*="___popup-control___"] > [class*="___menu-panel___"]{background-color
 /* 文字 */
 .___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,.___caption___2l1oP{color: #ddd !important;}
 .___status___1nZI5{color: #fff !important /* タイムシフト文字 */}
+
+/* SVG */
+[class^="___symbol-mark___"] > path{fill: #d5d5d5;}
+[class^="___toggle-button___"][aria-pressed="true"] [class^="___symbol-mark___"] > path{fill: #f79f51;}
+
 }
 
 @-moz-document url-prefix("https://site.live.nicovideo.jp/recent") {
