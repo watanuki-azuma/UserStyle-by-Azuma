@@ -32,6 +32,8 @@ div[class*="___popup-control___"] > [class*="___menu-panel___"]{background-color
 span[class^="___status___"][data-status-type="onair"]{background-color:#ff2a2a;color:#fff !important}
 span[class^="___status___"][data-timeshift-available="true"]{background-color: #2285e8;color: #fff !important;}
 
+[aria-label="メニュー"]{background-color:#1e1e1e !important;border:1px solid #8e8e8e}
+
 /* 謎 */
 .___content-area___3HJ4l{background: #252525;}
 .___tag-widget___3o0cE{background-color: #404040;}
@@ -272,6 +274,11 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 /* ギフトタブ周辺border色 */
 .___rich-view-status___3mt-b{border: 1px solid #2b2b2b;}
 
+/* not a community member */
+[class^="___broadcast_time___"]{background-color: hsla(0, 0%, 26.7%, 0.9);}
+[class^="___status___"][data-status="onair"],[data-item-name="programProviderMenu"] > [class^="___follow-anchor___"] > span{color:#fff !important}
+[data-item-name="programProviderMenu"] > [class^="___follow-anchor___"]::after{border-color: #ff8f00;}
+[data-item-name="programProviderMenu"] > [class^="___follow-anchor___"]{background-color: #b36d30;border:2px solid #cc8600;color: #fff !important;}
 
 /*削除する要素*/
 .___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad,a[class*="___premium-merit-appeal-banner"],a[class*="___app-download-banner"]{display: none;}
