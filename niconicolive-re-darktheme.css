@@ -254,7 +254,7 @@ div[class*="___description___"],[aria-controls="followed-program-notification-re
     color: #ccc !important; 
 }
 #root,[class^="___primary-information-area___"] > p > span,[class^="___table-row___"][data-comment-type="emotion"] [class^="___comment-text___"],[class^="___table-row___"][data-comment-type="normal"] [class^="___comment-text___"],[class^="___table-row___"][data-comment-type="nicoad"] [class^="___comment-text___"]{color:#dbdbdb}
-[class^="___comment-number___"],h2[class^="___heading___"],[class^="___user-name___"] > [class="name"],[class^="___user-name___"] > [class="name-suffix"]{color:#e1e1e1}
+[class^="___comment-number___"],h2[class^="___heading___"],[class^="___user-name___"] > [class="name"],[class^="___user-name___"] > [class="name-suffix"],[data-code="WatchFailedMaybeTooManyWatchings"] > p,li[data-item-name="closeButton"] > button{color:#e1e1e1}
 time[class^="___onair-time___"]{color:#b9b9b9}
 li[class*="-count-item"] > [class^="___count"] > [class^="___content___"],[class^="___promotion-balloon___"] > [class^="___promotion-anchor___"]{color:#d9d9d9}
 [class^="___comment-length-score"] > [class^="___value"],[class^="___contents-tree-anchor___"],[class^="___lead___"][href^="https://com.nicovideo.jp/community/"],[class^="___expand-button___"]:enabled,[class^="___content-area"] > [class^="___summary___"] > p[class^="___content-title___"]{color: #dbdbdb;}
@@ -331,7 +331,6 @@ div[class*="___program-summary___"]{box-shadow: 2px 10px 10px 0 #282828}
 li[class*="-count-item"] > span[class^="___count"] > svg[class^="___symbol"] > path,li[class*="-count-item"] > button[class^="___count"] > svg[class^="___symbol"] > path{fill: #e8e8e8;}
 button[class^="___count___"] > svg > path:last-child{fill:none !important;}
 button[class="___close-button___"] > svg > path{fill: #d5d5d5;}
-
 
 /* feedback */
 [aria-label="フィードバック"]{background-color: #101213;}
