@@ -263,6 +263,8 @@ a[class^="___name-anchor___"][href^="http://live.nicovideo.jp/search?keyword="]{
 [placeholder="追加するタグを入力"],[placeholder="コメント"]{color:#ddd}
 [class^="___content-area___"] > div[class^="___program-summary___"] > p[class^="___program-title___"]{color: #d0d0d0;}
 
+[class^="___table-row___"][data-comment-type="emotion"] [class^="___comment-text___"],[class^="___table-row___"][data-comment-type="normal"] [class^="___comment-text___"],[class^="___table-row___"][data-comment-type="nicoad"] [class^="___comment-text___"]{font-weight: 600;}
+
 /* border */
 [class^="___broadcast-participation-area___2_M2S"],[class^="___leo-player___"] > [class^="___player-status___"],[class^="___program-statistics-menu___"],a[href="#page-top"]{border:none;}
 
