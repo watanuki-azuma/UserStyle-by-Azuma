@@ -2,7 +2,7 @@
 /* それ以外 */
 
 /* 広告 */
-.___billboard-ad___2f-2_,#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad{display: none !important;}
+[class^="___billboard-ad___"],#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad{display: none !important;}
 
 /* 背景とか */
 button[class*="___toggle-button___"]{background-color: #ccc;}
@@ -34,11 +34,15 @@ span[class^="___status___"][data-timeshift-available="true"]{background-color: #
 
 [aria-label="メニュー"]{background-color:#1e1e1e !important;border:1px solid #8e8e8e}
 
-/* 謎 */
-.___content-area___3HJ4l{background: #252525;}
-.___tag-widget___3o0cE{background-color: #404040;}
-.___expander___BMnjT[aria-expanded="false"] .___expand-button___2TWkz::before{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#373737);}
+[data-layout-type="card-view"] > [class^="___content-area___"]{background: #252525;}
+[class^="___expand-absorber___"] > [class^="___tag-widget___"]{background-color: #404040;}
+[class^="___expand-absorber___"] > [class^="___tag-widget___"] > [class^="___expander___"][aria-expanded="false"] [class^="___expand-button___"]::before{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#373737);}
 
+[data-item-name="timeshiftReservationButton"]{background-color: #464646}
+[data-item-name="timeshiftReservationButton"]:hover{background-color:#c3c3c3;color:#252525 !important}
+
+[href^="recent?hasKonomiTag="]:hover{background-color: #b3b3b3; color:#252525 !important}
+button[class^="___load-button___"][value="もっと見る"]:hover{background-color:#252525}
 
 [class^="___visit-anchor___"]::after{border-color: #e8e8e8;}
 [placeholder="番組を探す"]{background-color: #fff;}
@@ -48,11 +52,10 @@ span[class^="___status___"][data-timeshift-available="true"]{background-color: #
 div[data-search-form-focused="true"] > form[class*="___search-form___"] > div > [placeholder="番組を探す"]{background-color: #515151;}
 div[data-search-form-focused="true"] > form[class*="___search-form___"] > div > [placeholder="番組を探す"]::placeholder{color:#fff !important}
 
-div[data-search-form-focused="true"] > form[class*="___search-form___"] > button[class^="___search-button___"]{background-color: #555;}
-div[data-search-form-focused="false"] > form[class*="___search-form___"] > button[class^="___search-button___"]{background-color: #555;}
+div[data-search-form-focused="true"] > form[class*="___search-form___"] > button[class^="___search-button___"],div[data-search-form-focused="false"] > form[class*="___search-form___"] > button[class^="___search-button___"]{background-color: #555;}
 
 /* 文字 */
-.___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,.___caption___2l1oP{color: #ddd !important;}
+[class^="___focus-program-list-section___"] [class*="__header__"] [class*="__heading__"],li[class^="___watch-count___"] > span,li[class^="___comment-count___"] > span,span[class^="___duration___"],[class^="___program-title___"] > a,[class^="___information"] > a,time[class^="___start-at"],[class^="___timeshift-reserved-count___"],[id$="ProgramListSection"] > header > a,#informationArea > section > [class*="___heading___"],#informationArea > section > [class*="___item-list___"] > a,[class*="___information-bar___"] > [class*="___message___"] > a,[class^="___information-bar___"] > span[class^="___subject___"],a[href^="recent?hasKonomiTag="] > span[class^="___label___"],a[href^="recent?hasKonomiTag="] > span[class^="___number___"],button[class^="___expand-button___"],[id$="ProgramListSection"] > header > h2,a[class^="___name-anchor___"][href^="recent?hasKonomiTag="],[value="もっと見る"],[class^="___sort-field___"] > [class^="___caption"],a[class^="___tag___"][href^="recent?extraTags="] > span[class^="___label"]{color: #ddd !important;}
 
 /* SVG */
 [class^="___symbol-mark___"] > path{fill: #d5d5d5;}
@@ -74,7 +77,7 @@ div[data-search-form-focused="false"] > form[class*="___search-form___"] > butto
 
 @-moz-document url-prefix("https://live.nicovideo.jp/timetable") {
 /* 広告 */
-.___billboard-ad___2f-2_,#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad,#footer_ads{display: none !important;}
+[class^="___billboard-ad___"],#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad,#footer_ads{display: none !important;}
 /* 文字 */
 .___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,li,.count,.___description___3aLzk[aria-expanded="false"],.___description___3aLzk{color: #ddd !important;}
 
@@ -88,12 +91,8 @@ body{background-color: #404040;}
 .timetablePage-TimeshiftButton{background-color: #535353;}
 .container table#timeline .item_status .message.onair{background-color: #bf4747}
 /* カレンダー */
-.ui-widget.ui-widget-content{
-    border: 1px solid #2f2f2f;
-}
-.ui-datepicker,.ui-state-default{
-    background-color: #414141 !important;
-}
+.ui-widget.ui-widget-content{border: 1px solid #2f2f2f;}
+.ui-datepicker,.ui-state-default{background-color: #414141 !important;}
 .ui-datepicker-week-end:nth-last-child(2) a.ui-state-default{
     background-color: #d4f0ff !important;
     color: #0282ff !important;
@@ -166,6 +165,12 @@ button[class*="toggle-button"][aria-pressed="true"]{
     border: 2px solid #717171;
 }
 
+/* onair following user */
+[class^="___program-card-list"] > li[role="listitem"] > [class^="___program-card"]:hover{background-color: #656565;}
+[class^="___program-card"] > div > [class^="___program-provider-name"]{color:#c8c8c8 !important}
+[class^="___program-card"] > div > [class^="___program-title"]{color:#e6aa6c !important}
+[class^="___program-card"] > div > [class^="___duration___"]{color:#a4c870}
+
 /* 説明欄の謎ボタン */
 [class*="___description___"][aria-expanded="false"] [class*="expand-button___"]{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#4f4f4f 16%);}
 .___channel-page-anchor___MM9Ik{
@@ -182,6 +187,7 @@ button[class*="toggle-button"][aria-pressed="true"]{
 /* フォローボタン */
 [class*="___toggle-button___"][aria-pressed=true],[class*="___toggle-button___"][aria-pressed="false"]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
 [class^="___follow-toggle-form___"][data-follow-status="follow"] [class^="___follow-status___"]{background-color: #535353;}
+button[class^="___toggle-button___"][value="フォロー解除"]:hover{color: #ff982a !important;background-color: whitesmoke;}
 
 /* タグっぽいとこ */
 .___tag___1B5lq{border: 1px solid #565656;background-color: #2b2b2b !important;}
@@ -194,6 +200,8 @@ button[class*="toggle-button"][aria-pressed="true"]{
 [class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"]{background-color:#515151;}
 [class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > div > [class^="___text-box___"]{background-color:#515151;border:1px solid #9d9d9d}
 button[class^="___edit-mode-toggle-button"] > span,[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > [class^="___faq-anchor___"]::after,[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > [class^="___register-button___"]{color: #eee !important;}
+ul[class^="___suggest"][tabindex="-1"] > *{color:#c8c8c8;background-color:#535353}
+ul[class^="___suggest"][tabindex="-1"] > *:hover{background-color:#141414}
 
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{color: #fff !important}
@@ -240,16 +248,34 @@ button[value="ネタを通報"]:hover{background-color: hsla(0, 0%, 62%, .9);}
 .ItemDialogContent_Title{color:#d5d5d5 !important}
 
 /* 文字設定 */
-h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,div[class*="___description___"]{
+div[class*="___description___"],[aria-controls="followed-program-notification-reader-target"] > span[class^="___label"]{
     font-weight:800;
     text-decoration: none;
     color: #ccc !important; 
-    border: inset 0px #222742 !important;
 }
+#root,[class^="___primary-information-area___"] > p > span,[class^="___table-row___"][data-comment-type="emotion"] [class^="___comment-text___"],[class^="___table-row___"][data-comment-type="normal"] [class^="___comment-text___"],[class^="___table-row___"][data-comment-type="nicoad"] [class^="___comment-text___"]{color:#dbdbdb}
+[class^="___comment-number___"],h2[class^="___heading___"],[class^="___user-name___"] > [class="name"],[class^="___user-name___"] > [class="name-suffix"]{color:#e1e1e1}
+time[class^="___onair-time___"]{color:#b9b9b9}
+li[class*="-count-item"] > [class^="___count"] > [class^="___content___"],[class^="___promotion-balloon___"] > [class^="___promotion-anchor___"]{color:#d9d9d9}
+[class^="___comment-length-score"] > [class^="___value"],[class^="___contents-tree-anchor___"],[class^="___lead___"][href^="https://com.nicovideo.jp/community/"],[class^="___expand-button___"]:enabled,[class^="___content-area"] > [class^="___summary___"] > p[class^="___content-title___"]{color: #dbdbdb;}
+[class^="___user-name-area___"] + [class^="___level___"]{color: #c4c4c4;}
+a[class^="___name-anchor___"][href^="http://live.nicovideo.jp/search?keyword="]{color: #c4c4c4;}
+[placeholder="追加するタグを入力"],[placeholder="コメント"]{color:#ddd}
+[class^="___content-area___"] > div[class^="___program-summary___"] > p[class^="___program-title___"]{color: #d0d0d0;}
+
+/* border */
+[class^="___broadcast-participation-area___2_M2S"],[class^="___leo-player___"] > [class^="___player-status___"],[class^="___program-statistics-menu___"],a[href="#page-top"]{border:none;}
+
+[data-selected-name="comment"] > [class^="___tab-area___"]{border-bottom:2px solid #5e5e5e;}
+
+/* comment area */
+[class^="___comment-context-menu___"]{background-color:#4d4d4d;}
+li[data-item-name="copyComment"] > button[class*="___menu-item___"],li[data-item-name="copyUserId"] > *,li[data-item-name="addNgComment"] > *,li[data-item-name="addNgUserId"] > *{background-color: #3e3e3e !important;color:#ddd}
+
 .___table-row___27ghe[data-comment-type=operator] .___comment-text___2cPL0{color: #23ca6f !important;}
 .___body___2BWU6{color: #eee !important;}
 
-/*ヘッダーまわり*/
+/*ヘッダーまわり class名変更に耐えられる記述がよくわからないのできちんと書けるまで対応停止
 .common-header-15gxh1a, .common-header-1cuw74j, .common-header-5onxr7, .common-header-zz80x3, .common-header-1gq7o6w{background-color: #666 !important} 
 .common-header-xp52wl:hover,.common-header-1cuw74j:hover, .common-header-5onxr7:hover, .common-header-zz80x3:hover, .common-header-1gq7o6w:hover{background-color: #2b2b2b !important}
 
@@ -269,7 +295,7 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 .nico-CommonHeaderRoot .common-header-1eex7vk{color: rgb(110, 222, 114);}
 .nico-CommonHeaderRoot .common-header-1ip78db:hover{background-color: rgb(60, 60, 60);}
 
-.common-header-sig2g>svg>path{fill:#eee !important}
+.common-header-sig2g>svg>path{fill:#eee !important} */
 
 /* ギフトタブ周辺border色 */
 .___rich-view-status___3mt-b{border: 1px solid #2b2b2b;}
@@ -281,7 +307,7 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 [data-item-name="programProviderMenu"] > [class^="___follow-anchor___"]{background-color: #b36d30;border:2px solid #cc8600;color: #fff !important;}
 
 /*削除する要素*/
-.___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad,a[class*="___premium-merit-appeal-banner"],a[class*="___app-download-banner"]{display: none;}
+.___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, [class^="___banner-ad___"], #footer-ad, #program-information-ad,a[class*="___premium-merit-appeal-banner"],a[class*="___app-download-banner"]{display: none;}
 
 /*たぶんコメント入れるとこ*/
 .___item-placeholder___3JoMT{border: solid 2px #ccc !important}
@@ -297,6 +323,13 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 
 /*生放送タイトル*/
 div[class*="___program-summary___"]{box-shadow: 2px 10px 10px 0 #282828}
+
+/* SVG */
+[aria-label="タイムシフト予約"] > svg > path{fill:#d0d0d0}
+li[class*="-count-item"] > span[class^="___count"] > svg[class^="___symbol"] > path,li[class*="-count-item"] > button[class^="___count"] > svg[class^="___symbol"] > path{fill: #e8e8e8;}
+button[class^="___count___"] > svg > path:last-child{fill:none !important;}
+button[class="___close-button___"] > svg > path{fill: #d5d5d5;}
+
 
 /* feedback */
 [aria-label="フィードバック"]{background-color: #101213;}
