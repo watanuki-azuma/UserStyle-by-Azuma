@@ -221,8 +221,10 @@ button.ActionButton.TwitterAccountPanel-button
 .CommentCommandPaletteNode svg{fill: #d7d7d7;}
 
 .TagContainer-editButton, .ActionButton.CommentCommandPaletteNode[data-type="size"], .CommentCommandPaletteNode[data-type="layout"]{background-color: #252525 !important;}
-.LikeButton{background-color: #666;}
-.LikeButton:hover{background-color: #404040;}
+
+/* likebutton */
+.LikeActionButton{background-color: #666;}
+.LikeActionButton:hover{background-color: #404040;}
 
 .SharePanelVisibleButton{background-color: #000;}
 
