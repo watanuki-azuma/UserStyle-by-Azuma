@@ -329,7 +329,7 @@ aside[class^="___banner-panel"],[class^="___banner-ad___"], #footer-ad, #program
 
 /*たぶんコメント入れるとこ*/
 [class^="___item-placeholder___"]{border: solid 2px #ccc !important}
-span[class^="___comment-length-score____"] > span[data-value="75"]{background: #575757;}
+span[class^="___comment-length-score____"] > span[data-value]{background: #575757;}
 
 /* command palette tab */
 [class^="___command-palette___"]{background-color:hsla(0, 0%, 31.8%, 0.90) ;}
@@ -372,7 +372,7 @@ button[class^="___close-button___"] > svg > path{fill: #d5d5d5 !important;}
     .container{background: #303030;}
 }
 
-@-moz-document url-prefix("https://nicoad.nicovideo.jp/my") {
+@-moz-document url-prefix("https://nicoad.nicovideo.jp/my"), url-prefix("https://nicoad.nicovideo.jp/nage") {
 /*ニコニ広告部分*/
     
 /* 文字設定 */
