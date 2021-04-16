@@ -7,7 +7,7 @@
 /* 好みタグ */
 
 [class^="___main-contents-search-area___"]{background-color: #404040}
-li[class^="___tag-card___"]{background-color: #545454}
+li > a[class*="___tag-card___"]{background-color: #545454}
 [class^="___name-label"][aria-label$="を好きな放送者の番組を検索する"],span[class^="___number___"]{color: #ddd}
 [class^="___user-follow-konomi-tag-list-section"] > [class^="___header"]{border-bottom: 2px solid #545454;background-color: #545454}
 section[class^="___user-follow-konomi-tag-list-section"] > ul[class^="___tag-list___"]{background-color: #545454}
