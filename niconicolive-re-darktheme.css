@@ -4,6 +4,14 @@
 /* 広告 */
 [class^="___billboard-ad___"],#header-ad,#middle-ad,#nicoadProgramListSection,#footer-ad{display: none !important;}
 
+/* 好みタグ */
+
+[class^="___main-contents-search-area___"]{background-color: #404040}
+li[class^="___tag-card___"]{background-color: #545454}
+[class^="___name-label"][aria-label$="を好きな放送者の番組を検索する"],span[class^="___number___"]{color: #ddd}
+[class^="___user-follow-konomi-tag-list-section"] > [class^="___header"]{border-bottom: 2px solid #545454;background-color: #545454}
+section[class^="___user-follow-konomi-tag-list-section"] > ul[class^="___tag-list___"]{background-color: #545454}
+
 /* 背景とか */
 button[class*="___toggle-button___"]{background-color: #ccc;}
 button[class*="___toggle-button___"]:hover{background-color: #bbb;}
@@ -50,12 +58,12 @@ button[class^="___load-button___"][value="もっと見る"]:hover{background-col
 [placehoder="番組を探す"]:hover{background-color: #515151;}
 
 div[data-search-form-focused="true"] > form[class*="___search-form___"] > div > [placeholder="番組を探す"]{background-color: #515151;}
-div[data-search-form-focused="true"] > form[class*="___search-form___"] > div > [placeholder="番組を探す"]::placeholder{color:#fff !important}
+div[data-search-form-focused="true"] > form[class*="___search-form___"] > div > [placeholder="番組を探す"]::placeholder{color:#fff !important;opacity: 0.6;}
 
 div[data-search-form-focused="true"] > form[class*="___search-form___"] > button[class^="___search-button___"],div[data-search-form-focused="false"] > form[class*="___search-form___"] > button[class^="___search-button___"]{background-color: #555;}
 
 /* 文字 */
-[class^="___focus-program-list-section___"] [class*="__header__"] [class*="__heading__"],li[class^="___watch-count___"] > span,li[class^="___comment-count___"] > span,span[class^="___duration___"],[class^="___program-title___"] > a,[class^="___information"] > a,time[class^="___start-at"],[class^="___timeshift-reserved-count___"],[id$="ProgramListSection"] > header > a,#informationArea > section > [class*="___heading___"],#informationArea > section > [class*="___item-list___"] > a,[class*="___information-bar___"] > [class*="___message___"] > a,[class^="___information-bar___"] > span[class^="___subject___"],a[href^="recent?hasKonomiTag="] > span[class^="___label___"],a[href^="recent?hasKonomiTag="] > span[class^="___number___"],button[class^="___expand-button___"],[id$="ProgramListSection"] > header > h2,a[class^="___name-anchor___"][href^="recent?hasKonomiTag="],[value="もっと見る"],[class^="___sort-field___"] > [class^="___caption"],a[class^="___tag___"][href^="recent?extraTags="] > span[class^="___label"]{color: #ddd !important;}
+[class^="___focus-program-list-section___"] [class*="__header__"] [class*="__heading__"],li[class^="___watch-count___"] > span,li[class^="___comment-count___"] > span,span[class^="___duration___"],[class^="___program-title___"] > a,[class^="___information"] > a,time[class^="___start-at"],[class^="___timeshift-reserved-count___"],[id$="ProgramListSection"] > header > a,#informationArea > section > [class*="___heading___"],#informationArea > section > [class*="___item-list___"] > a,[class*="___information-bar___"] > [class*="___message___"] > a,[class^="___information-bar___"] > span[class^="___subject___"],a[href^="recent?hasKonomiTag="] > span[class^="___label___"],a[href^="recent?hasKonomiTag="] > span[class^="___number___"],button[class^="___expand-button___"],[id$="ProgramListSection"] > header > h2,a[class^="___name-anchor___"][href^="recent?hasKonomiTag="],[value="もっと見る"],[class^="___sort-field___"] > [class^="___caption"],a[class^="___tag___"][href^="recent?extraTags="] > span[class^="___label"],[class^="___tag-widget"] > h2[class^="___heading"],h1[class^="___heading"],h2[class^="___heading"],[class^="___registration-counter___"]{color: #ddd !important;}
 
 /* SVG */
 [class^="___symbol-mark___"] > path{fill: #d5d5d5;}
@@ -489,10 +497,12 @@ path[data-v-6b25ead6]{fill:#3e3e3e !important;}
  @-moz-document url-prefix("https://nicoad.nicovideo.jp/live/") {
 
 
+/* ニコ生広告設定ページ */
+
 body{color:#ddd}
  /* 広告設定時ポップアップ */
-.publish-contributor-info[data-v-56d8a92e],.publish-entrance[data-v-7714524f]{background-color: #252525;}
-.tab-target[data-v-56d8a92e]{background-color: #404040;box-shadow: 0 0 8px #696969;}
+[class="default-content"] > [class*="publish-contributor-info"],[class="default-content"] > [class="publish-entrance"]{background-color: #252525}
+[class="wrapper"] > [class="tab-target"]{background-color: #404040;box-shadow: 0 0 8px #696969;}
 td[class="user"] > [class="user-info"]:not(:disabled){color: darkgoldenrod !important;}
 .publish-frame-grade-visualizer[data-v-8b2307a8]{background-image: radial-gradient(ellipse at center top,#c3c3c3,#383838);}
 .info dt>small[data-v-72ae8949],.info dt>strong[data-v-72ae8949],.info dd[data-v-72ae8949]{color: #2f2f2f;}
